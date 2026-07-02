@@ -1,33 +1,30 @@
 from abc import ABC,abstractmethod
 class Employee(ABC):
     def __init__(self,ename,eid,dept,salary,joindate,phno,mailId):
-        self.__ename=ename
+        self.ename=ename
         self.__eid=eid
-        self.__dept=dept
+        self.dept=dept
         self.__salary=salary
-        self.__joindate=joindate
+        self.joindate=joindate
         self.__phno=phno
         self.__mailId=mailId
-       
-    def get_ename(self):
-        return self.__ename
-    def set_ename(self,ename):
-        self.__ename=ename
     def get_eid(self):
         return self.__eid
-    def set_eid(self,eid):
+    def set_salary(self,eid):
         self.__eid=eid
-    def get_dept(self):
-        return self.__dept
-    def set_dept(self,dept):
-        self.__dept=dept
     def get_salary(self):
         return self.__salary
     def set_salary(self,salary):
-        self.__salary=salary
-    def set_salary(self,salary):
-        self.__salary=salary
-    
+        self.__salary=float(salary)
+    def get_phno(self):
+        return self.__phno
+    def set_phno(self,phno):
+        self.__phno=phno
+    def get_mailId(self):
+        return self.__mailId
+    def set_mailId(self,mailId):
+        self.__mailId=mailId
     def display(self):
-        pass
+        pass   
+   
         

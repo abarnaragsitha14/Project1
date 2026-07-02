@@ -7,6 +7,8 @@ while True:
     print("3.Search Details")
     print("4.Update Details")
     print("5.Delete Details")
+    print("6 Payroll Management")
+    print("7.Highest Paid Salary")
     choice=int(input("Enter your choice"))
     if choice==1:
         obj.add_employee()
@@ -19,6 +21,10 @@ while True:
     elif choice==5:
         obj.delete_employee()
     elif choice==6:
+         obj.payroll_manage()
+    elif choice==7:
+        obj.highest_salary()
+    elif choice==8:
         print("Thank you") 
         break
     else:
